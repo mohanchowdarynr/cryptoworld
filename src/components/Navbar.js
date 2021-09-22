@@ -13,8 +13,8 @@ const Navbar = () => {
                 <Link className="link" to='/currencies'>
                 <h4>Crypto Currencies</h4>
                 </Link>
-                <h4>Exchanges</h4>
-                <h4>News</h4>
+                <Link className="link" to="/exchanges"><h4>Exchanges</h4></Link>
+                <Link className="link" to="/news"><h4>News</h4></Link>
             </div>
         </Wrapper>
     )

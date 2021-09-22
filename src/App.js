@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import { Route,Switch } from 'react-router-dom';
 import Cryptocurrencies from './components/Cryptocurrencies';
+import Exchanges from './components/Exchanges';
+import News from './components/News';
+import CryptoDetails from './components/CryptoDetails';
 
 function App() {
   return (
@@ -19,6 +22,11 @@ function App() {
      <Route exact path="/currencies">
       <Cryptocurrencies />
      </Route>
+     <Route exact path="/exchanges"><Exchanges /></Route>
+     <Route exact path="/news"><News /></Route>
+     <Route exact path="/crypto/:coinId">
+              <CryptoDetails />
+      </Route>
       </Switch>
      </div>
     </Wrapper>
@@ -27,13 +35,13 @@ function App() {
 const Wrapper = styled.section`
 width: 100vw;
 display:flex;
-/* position: relative; */
 background-color:whitesmoke;
 .left{
   flex: 0.25;
 }
 .right{
   flex: 1;
+  overflow-x: hidden;
 }
 `
 export default App;

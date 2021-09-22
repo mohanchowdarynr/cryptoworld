@@ -34,7 +34,6 @@ const Home = () => {
             <h1>Latest Crypto News</h1>
             <Link className="link" to=""><h2>Show all</h2></Link>
             </div>
-
             </div>
         </Wrapper>
     )
