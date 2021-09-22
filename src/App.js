@@ -2,6 +2,8 @@ import './App.css';
 import styled from 'styled-components'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import { Route,Switch } from 'react-router-dom';
+import Cryptocurrencies from './components/Cryptocurrencies';
 
 function App() {
   return (
@@ -10,7 +12,14 @@ function App() {
      <Navbar />
      </div>
      <div className="right">
+     <Switch>
+     <Route exact path="/">
       <Home />
+     </Route>
+     <Route exact path="/currencies">
+      <Cryptocurrencies />
+     </Route>
+      </Switch>
      </div>
     </Wrapper>
   );
