@@ -5,7 +5,6 @@ import Home from './components/Home';
 import { Route,Switch } from 'react-router-dom';
 import Cryptocurrencies from './components/Cryptocurrencies';
 import Exchanges from './components/Exchanges';
-import News from './components/News';
 import CryptoDetails from './components/CryptoDetails';
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
       <Cryptocurrencies />
      </Route>
      <Route exact path="/exchanges"><Exchanges /></Route>
-     <Route exact path="/news"><News /></Route>
      <Route exact path="/crypto/:coinId">
               <CryptoDetails />
       </Route>
@@ -41,7 +39,7 @@ background-color:whitesmoke;
 }
 .right{
   flex: 1;
-  overflow-x: hidden;
+  
 }
 `
 export default App;

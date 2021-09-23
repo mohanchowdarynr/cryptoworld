@@ -53,9 +53,6 @@ const Wrapper = styled.div`
        padding: 10px;
    }
    .market{
-       /* display: flex;
-       justify-content: center;
-       flex-direction: column; */
        text-align: center;
        padding: 20px;
    }
